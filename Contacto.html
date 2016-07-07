@@ -31,58 +31,60 @@
         </ul>
     </nav>
 <div class="container">
-<section>
-    <h2> Contacta: </h2>
-    <div class="col-3">
 
-    </div>
-    <div class="col-3">
+    <section>
+        <h2> Contacta: </h2>
         <div class="col-3">
-            <h3>Formulario de contacto</h3>
-            <form id="form-contact" name="contact" method="get" novalidate>
-                <div class="form-row">
-                    <i></i>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" maxlength="60" required>
-                    <span class="return-name-quote"></span>
-                </div>
-                <div class="form-row">
-                    <i></i>
-                    <label for="last_name">Apelllidos: </label>
-                    <input type="text" name="last-name" id="last_name" placeholder="Apellidos" required>
-                    <span></span>
-                </div>
-                <div class="form-row">
-                    <i></i>
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" placeholder="email@gmail.com" pattern="">
-                    <span></span>
-                </div>
-                <div>
-                    <i></i>
-                    <label for="subject">Escribe algo: </label>
-                    <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <i></i>
-                    <label for="link-1">Linkedn</label>
-                    <input type="radio" name="link-1" id="link-1" value="Linkedn" required>
-                    <label for="link-2">About me</label>
-                    <input type="radio" name="link-2" id="link-2" value="About me" required>
-                    <label for="link-3">Otra:</label>
-                    <input type="radio" name="link-3" id="link-3">
-                </div>
-
-                <input type="submit" value="send">
-            </form>
+            Descripsión corta: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
         </div>
         <div class="col-3">
-            
-        </div>
-    </div>
-</section>
+            <div class="col-3">
+                <h3>Formulario de contacto</h3>
+                <form id="form-contact" name="contact" method="get" novalidate>
+                    <div class="form-row">
+                        <i></i>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" maxlength="60" required>
+                        <span class="return-name-quote"></span>
+                    </div>
+                    <div class="form-row">
+                        <i></i>
+                        <label for="last_name">Apelllidos: </label>
+                        <input type="text" name="last-name" id="last_name" placeholder="Apellidos" required>
+                        <span></span>
+                    </div>
+                    <div class="form-row">
+                        <i></i>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="email@gmail.com" pattern=^\S+@(([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})$" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <i></i>
+                        <label for="subject">Escribe algo: </label>
+                        <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <i></i>
+                        <label for="link-1">Linkedn</label>
+                        <input type="radio" name="link-1" id="link-1" value="Linkedn" required>
+                        <label for="link-2">About me</label>
+                        <input type="radio" name="link-2" id="link-2" value="About me" required>
+                        <label for="link-3">Otra:</label>
+                        <input type="radio" name="link-3" id="link-3">
+                    </div>
 
-    
+                    <input type="submit" value="send">
+                </form>
+            </div>
+            <div class="col-3">
+
+            </div>
+        </div>
+    </section>
 </div>
     <footer class="footer">
         Richard Cacuango &copy; 2016 Todos los derechos reservados
