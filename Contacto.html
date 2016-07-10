@@ -4,46 +4,75 @@
     <meta charset="UTF-8">
     <title>Contacto Richard</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-contact.css">
     <link rel="stylesheet" type="text/css" href="css/grid-6.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
     <link rel="stylesheet" type="text/css" href="font/Roboto-Light.ttf">
+    <link rel="stylesheet" type="text/css" href="font/fontawesome-webfont.ttf">
+    <link rel="stylesheet" type="text/css" href="font/fontawesome-webfont.woff">
+    <link rel="stylesheet" type="text/css" href="font/fontawesome-webfont.woff2">
+    <script src="js/lib/jquery-3.0.0.js"></script>
 </head>
 <body>
-    <nav class="">
-        <ul class="navigation">
-            <li class="">
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item">
                 <a href="#">Portada</a>
             </li>
-            <li class="">
+            <li class="navbar-item">
                 <a href="#quien-soy">Quién soy</a>
             </li>
-            <li class="">
+            <li class="navbar-item">
                 <a href="#estudios">Estudios</a>
             </li>
-            <li class="">
+            <li class="navbar-item">
                 <a href="#experiencia">Experiencia</a>
             </li>
-            <li class="">
-                <a href="sobre-mi">Sobre mi</a>
+            <li class="navbar-item">
+                <a href="#info-me">Sobre mi</a>
             </li>
-            <li class="">
+            <li class="navbar-item active">
                 <a href="contacto.html">Contacto</a>
             </li>
         </ul>
     </nav>
-<div class="container">
 
-    <section>
+<div class="container">
+    <section class="row section-container">
         <h2> Contacta: </h2>
         <div class="col-3">
             Descripsión corta: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.
+            <p>
+                También pudes ponerte en contacto a través de:
+            </p>
+            <ul class="">
+                <li>
+                    <a href="https://www.linkedin.com/" class="">
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                        Linkedn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/" class="">
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/" class="">
+                        <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+                        Google Plus
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="col-3">
-            <div class="col-3">
                 <h3>Formulario de contacto</h3>
-                <form id="form-contact" name="contact" method="get" novalidate>
+                <form id="form-contact" class="form" name="contact" method="get" novalidate>
                     <div class="form-row">
                         <i></i>
                         <label for="nombre">Nombre: </label>
@@ -58,37 +87,46 @@
                     </div>
                     <div class="form-row">
                         <i></i>
-                        <label for="email">Email: </label>
-                        <input type="email" name="email" id="email" placeholder="email@gmail.com" pattern=^\S+@(([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})$" required>
-                        <span></span>
-                    </div>
-                    <div>
-                        <i></i>
-                        <label for="subject">Escribe algo: </label>
-                        <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
-                    </div>
-                    <div>
-                        <i></i>
-                        <label for="link-1">Linkedn</label>
-                        <input type="radio" name="link-1" id="link-1" value="Linkedn" required>
-                        <label for="link-2">About me</label>
-                        <input type="radio" name="link-2" id="link-2" value="About me" required>
-                        <label for="link-3">Otra:</label>
-                        <input type="radio" name="link-3" id="link-3">
+                        <span>Como me has conocidodo? </span><br>
+
+                        <label for="link_1">Linkedn</label>
+                        <input type="radio" name="link" id="link_1" value="linkedn" required>
+                        <label for="link_2">About me</label>
+                        <input type="radio" name="link" id="link_2" value="about" required>
+                        <label for="link_3">Otro:</label>
+                        <input type="radio" name="link" id="link_3" value="otro" required>
+
+                        <input type="text" name="conocido" id="conocido" placeholder="Como me has encontrado?" required>
                     </div>
 
+                    <div class="form-row">
+                        <i></i>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="email@gmail.com" pattern="^\S+@(([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})$" title="El fomrmato de email no es correcto" required>
+                        <span></span>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Nº móvil: </label>
+                        <!--acepta sólo  números que comiencen por 9, 8, 6 o 7 seguido de 8 dígitos. ES- format-->
+                        <input type="text" name="phone" id="phone" placeholder="666 55 44 66" pattern="^[9|8|7|6]\d{8}$" title="acepta sólo  números que comiencen por 9, 8, 6 o 7" required>
+                    </div>
+                    <div class="form-row">
+                        <i></i>
+                        <label for="word_count">Escribe algo: </label><br>
+                        <textarea name="subject" id="word_count" cols="30" rows="10" placeholder="Máx 150 palabras"></textarea>
+                        <br>
+                        Total <span id="display_count">0</span> palabras.  Quedan: <span id="word_left">150</span>
+                    </div>
                     <input type="submit" value="send">
                 </form>
             </div>
-            <div class="col-3">
 
-            </div>
-        </div>
     </section>
 </div>
-    <footer class="footer">
+    <footer class="footer-index">
         Richard Cacuango &copy; 2016 Todos los derechos reservados
     </footer>
 </body>
 <script src="js/form.js"></script>
+<script src="js/textAreaCounter.js"></script>
 </html>

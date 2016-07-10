@@ -1,0 +1,79 @@
+/**
+Implement nav - Fleix en Contacts
+**/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto-Light.ttf);
+}
+
+ul li{
+    float:left;
+    display:block;
+
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.section-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form {
+    padding: 0 20px;
+}
+
+.form .form-row {
+    padding: 10px;
+}
+
+#conocido{
+    display: none;
+}
+
+input {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=button], input[type=submit], input[type=reset], button {
+    background-color: #2C90F1;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+/* When the pattern is matched */
+input[type=email]:valid, input[type=text]:valid{
+    color: green;
+}
+
+/* Unmatched */
+input[type=email]:invalid, input[type=text]:invalid {
+    color: red;
+}
+
+.footer-index{
+    background-color: #2C90F1;
+    color: white;
+    height: 50px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
