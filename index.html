@@ -5,6 +5,13 @@
     <title>About Me</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/grid-6.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="font/Roboto-Light.ttf">
+    <link rel="stylesheet" type="text/css" href="font/fontawesome-webfont.ttf">
+    <link rel="stylesheet" type="text/css" href="font/fontawesome-webfont.woff">
+    <link rel="stylesheet" type="text/css" href="font/fontawesome-webfont.woff2">
+    <script src="js/lib/modernizr-custom.js"></script>
 </head>
 <body>
 
@@ -12,8 +19,7 @@
         <h1 class="title">Richard Cacuango</h1>
         <img  class="title-user" src="img/default-user.png" alt="User Photo">
         <img class="title-img" src="img/background-img.png" alt="Foto backgroud">
-        <p class="title-cite"> Cita: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor.</p>
+        <p class="title-cite">Do not be embarrassed by your failures, learn from them and start again.</p>
     </header>
 
     <nav class="navbar">
@@ -40,10 +46,11 @@
     </nav>
 
     <div class="container">
-        <section id="quien-soy" class="col-6">
+        <section id="quien-soy" class="col-6 row">
+            <h2 class="section-info-style">Quién soy</h2>
             <div class="col-4">
                 <article class="acerca-de">
-                    <h2> Acerca de mi:</h2>
+                    <h3> Acerca de mi:</h3>
                     <p> Descripsión corta: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -61,16 +68,29 @@
                    <p>Phone No:  <span>  654 321 012</span></p>
                    <footer>
                        <ul class="">
-                           <li class=""><a>1</a></li>
-                           <li class=""><a>2</a></li>
-                           <li class=""><a>3</a></li>
+                           <li>
+                               <a href="https://www.linkedin.com/" class="">
+                                   <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="https://github.com/" class="">
+                                   <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="https://plus.google.com/" class="">
+                                   <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+                               </a>
+                           </li>
                        </ul>
                    </footer>
                </article>
             </div>
         </section>
 
-        <section id="estudios" class="col-6">
+        <section id="estudios" class="col-6 section-container">
+            <h2 class="section-info-style">Estudios</h2>
             <article>
                 <header>
                     <h3> Universitat de les Illes Baleares</h3>
@@ -81,29 +101,32 @@
                     <figcaption>
                         <small> Carr. de Valldemossa, km 7,5, 07122 Palma, Illes Balears</small>
                     </figcaption>
-                    <p>Estudios : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Los ingenieros telemáticos dominan el diseño de redes de transmisión de datos, los protocolos de comunicaciones, Internet, la conmutación y señalización telefónica, la arquitectura y los sistemas operativos de los sistemas telemáticos, los servidores web, el diseño de aplicaciones y servicios en red y la seguridad en las redes de comunicación entre otros..</p>
+                    <aside>
+                        <a href="http://estudis.uib.es/es/grau/telematica/GTTT-P/">Más información.</a>
+                    </aside>
                 </figure>
             </article>
         </section>
 
 
-        <section id="experiencia" class="col-6">
+        <section id="experiencia" class="col-6 section-container">
+            <h2 class="section-info-style"> Experiencia Laboral</h2>
             <div class="col-2">
                 <article>
                     <header>
                         <h3>OCDS</h3>
                         <span> Oficina de Cooperació al Desenvolupament i Solidaritat </span>
                     </header>
-                    <figure>
+                    <figure class="experiencia-photo">
                         <img src="img/ocds-logo.png" alt="Logo OCDS UIB">
                         <figcaption>
-                            <small> Universitat de les Illes Baleares</small>
+                            <small>Carr. de Valldemossa, km 7,5, 07122 Palma, Illes Balears</small>
                         </figcaption>
-                        <p>
-                            Tareas realizadas:
-                        </p>
                     </figure>
+                    <p>
+                        Tareas realizadas:
+                    </p>
                     <footer>
                         Periodo de trabajo
                     </footer>
@@ -113,7 +136,7 @@
                 <article>
                     <h3> MeteoClim</h3>
                     <span> Start-up de nueva creación especializada en meteorología, climatología y cambio climático.</span>
-                    <figure>
+                    <figure class="experiencia-photo">
                         <img src="img/meteoclim-logo.png" alt=" Logo MeteoCLim SL">
                         <figcaption>
                             <small> C/Isaac Newton, edificio 17, segundo piso, módulo C-11
@@ -132,7 +155,7 @@
                         <h3>Mola Factory SA</h3>
                         <span> Acompañando a emprendedores en su carrera hacia el éxito</span>
                     </header>
-                    <figure>
+                    <figure class="experiencia-photo">
                         <img src="img/mola-logo.png" alt=" Logo Mola Factory SA">
                         <figcaption>
                             <small> C\Galileo Galilei s/n, Edificio U (dpcho. 13A) ParcBit. 07121</small>
@@ -146,7 +169,8 @@
             </div>
         </section>
 
-        <section id="">
+        <section id="info-me" class="section-container">
+            <h2 class="section-info-style"> Sobre mi</h2>
             <article>
                 <h3>Aficiones</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -172,4 +196,5 @@
         Richard Cacuango &copy; 2016 Todos los derechos reservados
     </footer>
 </body>
+<script src="js/menu.js"></script>
 </html>

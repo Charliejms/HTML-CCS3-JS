@@ -29,6 +29,13 @@ a{
     padding-bottom: 50px;
 }
 
+.meta-info{
+    font-size: 15px;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
 .form {
     padding: 0 20px;
 }
