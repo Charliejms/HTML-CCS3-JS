@@ -7,12 +7,12 @@
     <link rel="stylesheet" type="text/css" href="css/style-contact.css">
     <link rel="stylesheet" type="text/css" href="css/grid-6.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-
     <link rel="stylesheet" type="text/css" href="font/Roboto-Light.ttf">
     <link rel="stylesheet" type="text/css" href="font/fontawesome-webfont.ttf">
     <link rel="stylesheet" type="text/css" href="font/fontawesome-webfont.woff">
     <link rel="stylesheet" type="text/css" href="font/fontawesome-webfont.woff2">
     <script src="js/lib/jquery-3.0.0.js"></script>
+    <script src="js/lib/modernizr-custom-2.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -114,11 +114,13 @@
                     <div class="form-row">
                         <i></i>
                         <label for="word_count">Escribe algo: </label><br>
-                        <textarea name="subject" id="word_count" cols="30" rows="10" placeholder="Máx 150 palabras"></textarea>
+                        <textarea name="subject" id="word_count" cols="30" rows="10" placeholder="Máx 150 palabras" required></textarea>
                         <br>
                         Total <span id="display_count">0</span> palabras.  Quedan: <span id="word_left">150</span>
                     </div>
-                    <input type="submit" value="send">
+                    <div class="form-row">
+                        <button id="submit" type="submit"> Enviar</button>
+                    </div>
                 </form>
             </div>
 

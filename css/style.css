@@ -134,6 +134,14 @@ body{
     font-size: 18px;
 }
 
+/* Flex box */
+.vertical-container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* ---------------------------------------------------------------------- */
 /*   SECTION BODY About Me
@@ -178,3 +186,5 @@ a{
     align-items: center;
     justify-content: center;
 }
+
+

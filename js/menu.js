@@ -99,9 +99,9 @@ function changeMenuStyle(evt){
 		navbar.style.backgroundColor = '#4C6DEF';
 		deleteActiveClass()
 		if (Modernizr.classList) {
-			document.querySelector('a[href="quien-soy"]').parentNode.classList.add("active-reverse");
+			document.querySelector('a[href$="quien-soy"]').parentNode.classList.add("active-reverse");
 		} else { 
-			document.querySelector('a[href="quien-soy"]').parentNode.className += " active-reverse";
+			document.querySelector('a[href$="quien-soy"]').parentNode.className += " active-reverse";
 		}
 	} else if (window.pageYOffset >= offsetEstudios && window.pageYOffset < offsetExperiencia){
 		if(!previous) {
@@ -112,9 +112,9 @@ function changeMenuStyle(evt){
 		navbar.style.backgroundColor = '#4C6DEF';
 		deleteActiveClass();
 		if (Modernizr.classList) {
-			document.querySelector('a[href="estudios"]').parentNode.classList.add("active");
+			document.querySelector('a[href$="estudios"]').parentNode.classList.add("active");
 		} else {
-			document.querySelector('a[href="estudios"]').parentNode.className += " active";
+			document.querySelector('a[href$="estudios"]').parentNode.className += " active";
 		}
 	} else if(window.pageYOffset >= offsetExperiencia && window.pageYOffset < offsetInfoMe){
 		if(!previous) {
@@ -125,9 +125,9 @@ function changeMenuStyle(evt){
 		navbar.style.backgroundColor = '#4C6DEF';
 		deleteActiveClass();
 		if (Modernizr.classList) {
-			document.querySelector('a[href="experiencia"]').parentNode.classList.add("active");
+			document.querySelector('a[href$="experiencia"]').parentNode.classList.add("active");
 		} else {
-			document.querySelector('a[href="experiencia"]').parentNode.className += " active";
+			document.querySelector('a[href$="experiencia"]').parentNode.className += " active";
 		}
 	}
 
